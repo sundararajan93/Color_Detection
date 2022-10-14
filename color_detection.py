@@ -1,13 +1,11 @@
 import pandas as pd
 import cv2
 
-
-# image_path = "image.jpg"
 image_path = input("Enter the Image path: ")
-
 
 # creating index to the csv file
 index = ["Color", "Color Name", "Hex Value", "R", "G", "B"]
+
 # Reading the csv file
 df = pd.read_csv("colors.csv", names=index, header=None)
 
